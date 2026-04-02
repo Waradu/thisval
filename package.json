@@ -1,0 +1,23 @@
+{
+  "name": "thisval",
+  "version": "0.1.0",
+  "description": "Test types in ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waradu/thisval.git"
+  },
+  "homepage": "https://waradu.dev",
+  "license": "MIT",
+  "main": "./index.ts",
+  "type": "module",
+  "module": "./index.ts",
+  "types": "./index.ts",
+  "peerDependencies": {
+    "typescript": "^6"
+  },
+  "keywords": [
+    "tests",
+    "test",
+    "types"
+  ]
+}
