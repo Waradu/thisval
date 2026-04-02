@@ -19,6 +19,8 @@ Run TypeScript in type-check mode:
 
 If a type assertion fails, TypeScript will report an error.
 
+Use `strict` mode.
+
 ## Examples
 
 Check out: [`examples.ts`](./examples.ts)
