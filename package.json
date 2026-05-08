@@ -1,6 +1,6 @@
 {
   "name": "thisval",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test types in ts",
   "repository": {
     "type": "git",
@@ -8,8 +8,8 @@
   },
   "homepage": "https://waradu.dev",
   "license": "MIT",
-  "main": "./index.ts",
   "type": "module",
+  "main": "./index.ts",
   "module": "./index.ts",
   "types": "./index.ts",
   "peerDependencies": {

@@ -1,3 +1,6 @@
+export type Assert<T extends true> = T;
+export type IsEqual<A, B> = [A] extends [B] ? ([B] extends [A] ? true : false) : false;
+
 type NotKeyOf<T, K extends PropertyKey> = K extends keyof T ? never : K;
 
 type Equal<A, B> =

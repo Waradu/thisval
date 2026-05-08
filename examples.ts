@@ -1,4 +1,4 @@
-import thistyp from ".";
+import thistyp, { type Assert, type IsEqual } from ".";
 
 // --- Mock type ---
 
@@ -21,6 +21,17 @@ thistyp.is.optional(value.count);
 thistyp.fn.returns<string>(() => "test");
 
 thistyp.are.maybe<string>(value.name, value.location);
+
+// --- Assert ---
+
+type T1 = "a" | "b";
+type T2 = "a" | "b";
+type T3 = "a" | "c";
+
+type _1 = Assert<IsEqual<T1, T2>>
+
+// @ts-expect-error Is Not Equal
+type _2 = Assert<IsEqual<T1, T3>>
 
 // --- Negative Tests ---
 
